@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+<!-- HERO SECTION -->
+<div class="container-fluid p-0">
+  <div class="position-relative">
+    <img src="{% static 'img/jewel.png' %}" class="w-100" style="height: 90vh; object-fit: cover;">
+    
+    <div class="position-absolute top-50 start-50 translate-middle text-center text-white">
+      <h1 class="display-4 text-yellow fw-bold">Luxury Jewellery Collection</h1>
+      <p >Elegance that defines you </p>
+      <a href="/catlogue" class="btn btn-warning px-4 py-2">Shop Now</a>
+    </div>
+  </div>
+</div>
+
+<!-- FEATURED PRODUCTS -->
+<div class="container my-5">
+  <h2 class="text-center mb-4">Featured Collection</h2>
+
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card shadow-sm">
+        <img src="{% static 'img/Necklace.jpg' %}" class="card-img-top">
+        <div class="card-body text-center">
+          <h5>Gold Necklace</h5>
+          <p>₹2,50,000</p>
+          <a href="#" class="btn btn-dark">View</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow-sm">
+        <img src="{% static 'img/diamond.jpg' %}" class="card-img-top">
+        <div class="card-body text-center">
+          <h5>Diamond Ring</h5>
+          <p>₹4,00,000</p>
+          <a href="#" class="btn btn-dark">View</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow-sm">
+        <img src="{% static 'img/Bracelet.jpg' %}" class="card-img-top">
+        <div class="card-body text-center">
+          <h5>Silver Bracelet</h5>
+          <p>₹1,00,000</p>
+          <a href="#" class="btn btn-dark">View</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="bg-dark text-white text-center py-5">
+  <h2>Why Choose Us?</h2>
+  <p>Premium Quality | Trusted Brand | Best Prices</p>
+</div>
+
+{% endblock %}
